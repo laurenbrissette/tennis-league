@@ -10,21 +10,34 @@ My active version of this project is currently running as an extension on a Goog
 
 ## Install and Run
 To add AppsScript to your sheet: 
+
   (1) Open the Google Sheet
+  
   (2) Navigate to "Extensions"
+  
   (3) Under "Extensions", select "Apps Script" 
+  
   (4) In the file, paste the code from this project
 
 To edit the script for your project: 
+
   (5) Set variable at the top "yourEmail" to be equal to the email address, in quotes, that you want to receive the success/error report each run.  
+  
   (6) Edit the messages in function push and function sendTexts to match the context of your schedule.  Currently, they address the tennis league and tennis games.
 
 To automate run:
+
   (7) Navigate to the clock symbol on the far left guidebar, select "Triggers"
+  
   (8) Add Trigger -> Event Type 
+  
           Choose which function to run: push
+          
           Choose which deployment should run: Head
+          
           Select event source: time driven
+          
       Time and failure notification are personal preference.  Note, the program responds only to tomorrow's date on the schedule.
+      
       My program is set to run every Friday, as the games are always Saturdays!
 
